@@ -52,10 +52,10 @@ function Details({ navigation,route }) {
 
       <Button
         title="go home again"
-        onPress={() =>{navigation.navigate("Home",{item:"A R rehman sabka baap"})}} />
+        onPress={() =>{navigation.navigate("Home",{item:"nav to Home pressed"})}} />
       <Button
         title="go back"
-        onPress={() => navigation.goBack({item:"Javed ali sabka chacha"})} />
+        onPress={() => navigation.goBack({item:"go back pressed"})} />
 
     </View>
   );
@@ -72,11 +72,11 @@ function App() {
           name="Home"
           component={Home}
           options={{ title: "WFH" }}
-          initialParams={{item: " initial param " }} />
+          initialParams={{item: " initial param  for home Screen " }} />
         <Stack.Screen
           name="Details"
           component={Details}
-          initialParams={{item:"aja saanjh hui mujhe teri fikar dudndhla ayi meri nazar .. aja na :'("}} />
+          initialParams={{item:"Initial params fro details screen "}} />
 
       </Stack.Navigator>
 
